@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasia's Cakes - Introduction</title>
+	<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+	<link rel = "stylesheet" type = "text/css" href = "styles/default_brand.css" />
+	<link rel = "stylesheet" type = "text/css" href = "styles/intro_form.css" />
+	<meta name="keywords" content="Nastassia Tsishuk, web115, introduction" />
+	<link href="images/icon2.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<!-- include header-->
+	<div data-include="components/header_brand.html"></div>
+	<div data-include="components/navigation_brand.html"></div>
+	<main>
+		<h1 id="intro_greeting">Welcome!</h1>
+		<h2 id="intro_heading">Introduction form</h2>
+		<form id="intro_form" name="intro_form">
+			<div class="intro_name">
+				<div>
+					<label for="first_name">First name:</label><input type="text" id="first_name" name="first_name" value="Nastassia">
+				</div>
+				<div>
+					<label for="last_name">Last name:</label><input type="text" id="last_name" name="last_name" value="Tsishuk">
+				</div>
+				<div>
+					<label for="middle_initial">Middle Initial:</label><input type="text" id="middle_initial" name="middle_initial" value="M">
+				</div>
+			</div> 
+			<div class="questions">
+				<label for="per_background">Personal background:</label>
+				<textarea type="text" id="per_background" name="per_background" onclick="greeting()">I am from Belarus; it is a small country in Eastern Europe, between Russia and Poland. I am 33 years old; I am married, and I have two wonderful sons 3 and 5 years old. My family and I moved to the USA in 2017.</textarea>
+				<label for="prof_background">Professional background:</label>
+				<textarea type="text" id="prof_background" name="prof_background"  rows="4" cols="49">I worked as a design engineer at dump trucks’ enterprise in Belarus. Now, I'm a student and a housewife.</textarea>
+				<label for="academ_background">Academic background:</label>
+				<textarea type="text" id="academ_background" name="academ_background"  rows="4" cols="49">I have three master’s degrees: an MBA and two in engineering. I have always been interested in programming because when you are working as a software developer, you always need to work using your brain, perfect your skills, and learn new things. When we moved, I decided to change my life and start my career from scratch radically. I began my education at CPCC in the spring of 2019. I hope to finish it in the spring of 2021. I chose the specialty Full Stack Programming because I am interested in Python and Web Markup.</textarea>
+				<label for="course_background">Background in the subject matter of this course:</label>
+				<textarea type="text" id="course_background" name="course_background"  rows="4" cols="49">I was always interested in web development. 5 years ago, when my elder son was less than one year, I started to learn HTML and CSS with HTML academy, but stopped. Now I decided to continue my education or, better to say, start from scratch it in English(the original language). I finished WEB 110 last semester. WEB 115 is my next step in web development.</textarea>
+				<label for="os">Primary computer platform:</label>
+				<select id="os" name="os">
+					<option value="Windows">Windows</option>
+					<option value="Linux/Unix">Linux/Unix</option>
+					<option value="MacOS">MacOS</option>
+					<option value="Android">Android</option>
+					<option value="Other">Other</option>
+				</select> 	
+				<label for="courses">Course(s) in this semester:</label><p>How many courses do you have in this semester?</p><input type="number" id="courses" name="courses" value="4"> 
+				<div id="new_courses">
+					<!--<input type="text" class="course" value="WEB-115-85: Web Markup and Scripting">
+					<input type="text" class="course" value="DBA-110-50: Database Concepts">
+					<input type="text" class="course" value="CSC-143-90: Object-Oriented Programming">
+					<input type="text" class="course" value="CSC-122-85: Python Application Development">-->
+				</div>	
+				<button type="button" id="add_course_box" onclick="add_courses()">Add courses</button>
+				<label for="interesting_fact">An interesting fact to remember by:</label>
+				<textarea type="text" id="interesting_fact" name="interesting_fact"  rows="4" cols="49">Before Christmas, I adopted a cat. She lived near our and neighbors' houses for about three weeks. I felt sorry for her when it became very cold outside and I let her inside for the night. The next morning I took her to the vet hospital to find her owners, but she did not have a chip. I decided to keep her.</textarea>
+				<label for="thing_to_share">Another interesting thing to share:</label>
+				<textarea type="text" id="thing_to_share" name="thing_to_share"  rows="4" cols="49">So now, I have two cats: Mars and Athena.</textarea>
+			</div>
+			<button type="button" id="submit_intro" onclick="submit_introduction()">Submit</button>
+		</form>
+	</main>
+<!-- include footer-->
+<div data-include="components/footer_brand.html"></div>
+<script src="scripts/htmlinclude.js"></script>
+<script src="scripts/introduction.js"></script>
+</body>
+</html>

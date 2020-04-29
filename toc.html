@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasia's Cakes - Table of Contents</title>
+	<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+	<link rel = "stylesheet" type = "text/css" href = "styles/default_brand.css" />
+	<meta name="keywords" content="Nastassia Tsishuk, table of contents, content" />
+	<link href="images/icon2.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<!-- include header-->
+	<div data-include="components/header_brand.html"></div>
+	<div data-include="components/navigation_brand.html"></div>
+	<main>
+		<h1>Nastassia Tsishuk</h1>
+		<h2>Table of Contents</h2>
+		<ol class="level0">
+			<li><a href="introduction.html">Introduction</a></li>
+			<li><a href="contract.html">Contract</a></li>
+			<li><a href="brand.html">Brand</a></li>
+			<li>
+				<a href="swtl.html">A Smarter Way to Learn JavaScript </a>
+				<button class="menubtn" onclick="openL('swtl')" id = "swtl">&#11167;
+				</button><ul class="level1">
+						<li>1-10</li>
+						<li>11-20</li>
+						<li>21-30</li>
+						<li>31-40</li>
+						<li>41-50</li>
+						<li>51-60</li>
+						<li>61-70</li>
+						<li>71-80</li>
+						<li>81-89</li>
+					</ul>
+			</li>
+			<li>
+				<a href="examples.html">A Smarter Way to Learn JavaScript. Examples </a>
+				<button class="menubtn" onclick="openL('swtle')" id = "swtle">&#11167;
+				</button><ul class="level1">
+					<li><a href="examples01.html#alert">Alerts</a></li>
+					<li><a href="examples01.html#variables">Variables</a></li>
+					<li><a href="examples01.html#mExpressions">Math Expressions</a></li>
+					<li><a href="examples01.html#concatenating">Concatenating text strings</a></li>
+					<li><a href="examples01.html#prompts">Prompts</a></li>
+					<li><a href="examples01.html#ifStatements"><em>if</em>, <em>if...else</em> and <em>else if</em> statements</a></li>
+					<li><a href="examples01.html#setsOfConditions">Testing sets of conditions</a></li>
+					<li><a href="examples01.html#arrays">Arrays</a></li>
+					<li><a href="examples01.html#forLoop"><em>for</em> loops</a></li>
+					<li><a href="examples01.html#cases">Changing case</a></li>
+					<li><a href="examples01.html#strings">Strings</a></li>
+					<li><a href="examples01.html#roundNum">Rounding numbers</a></li>
+					<li><a href="examples01.html#randonNum">Random numbers</a></li>
+					<li><a href="examples01.html#converting">Converting strings and numbers</a></li>
+					<li><a href="examples01.html#todayDate">Date and time</a></li>
+					<li><a href="examples01.html#functions">Functions</a></li>
+					<li><a href="examples01.html#switchStatement"><em>switch</em> statements</a></li>
+					<li><a href="examples01.html#whileLoop"><em>while</em> loops</a></li>
+					<li><a href="examples01.html#doWhileLoop"><em>do...while</em> loops</a></li>
+					<li><a href="examples01.html#placeScript">Placing scripts</a></li>
+					<li><a href="examples01.html#comments">Commenting</a></li>
+					<li><a href="examples01.html#events">Events</a></li>
+					<li><a href="examples01.html#fieldValues">Field values</a></li>
+					<li><a href="examples01.html#settingStyles">Setting styles</a></li>
+					<li><a href="examples01.html#targetByTag">Target elements by tag name</a></li>
+					<li><a href="dom.html">The DOM</a></li>
+					<li>Objects</li>
+					<li>Browser control</li>
+					<li>Form validation</li>
+					<li>Exceptions</li>
+					<li>Handle events within JavaScript</li>
+		</ul>
+			</li>
+			<li>Fizz Buzz <button class="menubtn" onclick="openL('fizzBuzz')" id = "fizzBuzz">&#11167;
+			</button><ul class="level1">
+				<li><a href="fizzbuzz01.html">Fizz Buzz 0 Part 1</a></li>
+				<li><a href="fizzbuzz02.html">Fizz Buzz 0 Part 2</a></li>
+				<li><a href="fizzbuzz1.html">Fizz Buzz 1</a></li>
+				<li><a href="fizzbuzz2.html">Fizz Buzz 2</a></li>
+				<li><a href="fizzbuzz3.html">Fizz Buzz 3</a></li>
+				<li><a href="fizzbuzz4.html">Fizz Buzz 4</a></li>
+			</ul>
+			</li>
+			<li>One page sites with JS<button class="menubtn" onclick="openL('one_page_site')" id = "one_page_site">&#11167;
+				</button><ul class="level1">
+					<li><a href="onepagesite_original/docs/index1.html">One page site. Example</a></li>
+					<li><a href="onepagesite/index1.html">Branded one page site</a></li>
+				</ul>
+			</li>
+			<li><a href="introduction_form.html">Introduction Form</a></li>
+		</ol>
+	</main>
+<!-- include footer-->
+<div data-include="components/footer_brand.html"></div>
+<script src="scripts/htmlinclude.js"></script>
+<script src="scripts/opendown.js"></script>
+</body>
+
+</html>

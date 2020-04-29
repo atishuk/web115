@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasia's Cakes - Fizz Buzz</title>
+	<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+	<link rel = "stylesheet" type = "text/css" href = "styles/default_brand.css" />
+	<meta name="keywords" content="fizz, buzz" />
+	<link href="images/icon2.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<!-- include header-->
+	<div data-include="components/header_brand.html"></div>
+	<div data-include="components/navigation_brand.html"></div>
+	<main>
+		<h1>Nastassia Tsishuk</h1>
+		<h2>Fizz Buzz 3</h2>
+		<h2 id="greeting_header">Welcome to Tasia's Cakes!</h2>
+		<form class="fizzbuzz" id="fizzbuzz_form">
+			<label for="first_name">First name:</label><br>
+			<input type="text" id="first_name" name="first_name" value="Nastassia"><br>
+			<label for="last_name">Last name:</label><br>
+			<input type="text" id="last_name" name="last_name" value="Tsishuk"><br>
+			<label for="middle_initial">Middle Initial:</label><br>
+			<input type="text" id="middle_initial" name="middle_initial" value="M"><br>
+			<button type="button" id="submit_fizzbuzz" onclick="submit_click()">Submit</button>
+			<button type="button" id="modify_fizzbuzz" onclick="modify_list()">Modify list</button>
+		</form>
+	</main>
+<!-- include footer-->
+<div data-include="components/footer_brand.html"></div>
+<script src="scripts/htmlinclude.js"></script>
+<script src="scripts/fizzbuzz3.js"></script>
+</body>
+</html>

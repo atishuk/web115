@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Tasia's Cakes</title>
+		<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+		<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/minibarjs@latest/dist/minibar.min.css">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div class="anchors">
+			<ul>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#order">Order</a></li>
+				<li><a href="#location">Location</a></li>
+			</ul>
+		</div>
+
+		<main>
+			<section data-anchor="home">
+				<div class="text">
+					<h1 class="main_title">Tasia's cakes - Tasty cakes</h1>
+					<img class="logo" src="img/logo_200x200.png" />
+					<p class="main_title">Made with love</p>
+					<!--<div class="scroller">
+						<small>Scroll down or swipe up.</small>
+					</div>-->
+				</div>
+			</section>
+			<section data-anchor="products">
+				<div class="text">
+				<div class="list_of_goods">
+					<h4>Our products:</h4>
+					<ol>
+						<li>Biscuit</li> 
+						<li>Bagel</li>
+						<li>Bread roll</li> 
+						<li>Bun</li>  
+						<li>Muffin</li> 
+						<li>Brownie</li> 
+						<li>Cake</li>
+						<li>Cookie</li> 	
+						<li>Pastry</li>
+					</ol>
+					</div>
+				</div>
+			</section>
+			<section data-anchor="order">
+				<div class="text">
+					<div class="order">
+						<p>Choose how many baked goods you want to order.</p>
+						<form>
+						<input type="text" style="display: none;">
+						<label for="cakes">Cakes:</label><br>
+						<input type="text" id="cakes" name="cakes" value="0">
+						<br>
+						<label for="donuts">Donuts:</label><br>
+						<input type="text" id="donuts" name="donuts" value="0">
+						<br>
+						<label for="cookies">Cookies:</label><br>
+						<input type="text" id="cookies" name="cookies" value="0">
+						<br>
+						<label for="biscuits">Biscuits:</label><br>
+						<input type="text" id="biscuits" name=
+						"biscuits" value="0">
+						<br>
+						<button type="button" class="order_button" id="order">Order</button>
+						</form>
+						<p id="forFunctions">Does not work</p>
+					</div>
+				</div>
+			</section>
+			<section data-anchor="location">
+				<div class="text">
+					<table class="hours">
+						<thead>
+							<tr>
+								<th colspan="2">Opening Hours</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Monday</td>
+								<td>10:00 am - 6:00 pm</td>
+							</tr>
+							<tr>
+								<td>Tuesday</td>
+								<td>10:00 am - 6:00 pm</td>
+							</tr>
+							<tr>
+								<td>Wednesday</td>
+								<td>10:00 am - 6:00 pm</td>
+							</tr>
+							<tr>
+								<td>Thursday</td>
+								<td>10:00 am - 6:00 pm</td>
+							</tr>
+							<tr>
+								<td>Friday</td>
+								<td>10:00 am - 6:00 pm</td>
+							</tr>
+							<tr>
+								<td>Saturday</td>
+								<td>10:00 am - 2:00 pm</td>
+							</tr>
+							<tr>
+								<td>Sunday</td>
+								<td>Close</td>
+							</tr>
+						</tbody>
+					</table>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8677.377228185895!2d-80.80115641013288!3d35.446280073383186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854026bbd4eb6cf%3A0xcfc4bc4ec5d17965!2sStonecutter%20Ln%2C%20Deweese%2C%20NC%2028036!5e0!3m2!1sen!2sus!4v1587673612329!5m2!1sen!2sus" width="600" height="350" frameborder="0" style="border:2px solid maroon;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</section>
+		</main>
+
+		<div id="settings" style="display: none;">
+			<div class="settings-inner">
+				<a href="#" id="settings-open"><span class="mdi"></span></a>
+				<div id="scroll">
+					<h4>Events</h4>
+					<div class="setting">
+						<ul id="listeners"></ul>
+					</div>
+					<h4>Config</h4>
+					<div class="setting">
+						<label for="animation">animation <span class="output"></span></label>
+						<input type="range" id="animation">
+					</div>
+
+					<div class="setting">
+						<label for="delay">delay <span class="output"></span></label>
+						<input type="range" id="delay">
+					</div>
+
+					<div class="setting">
+						<label for="swipeThreshold">swipeThreshold <span class="output"></span></label>
+						<input type="range" id="swipeThreshold">
+					</div>
+
+					<div class="setting">
+						<div class="checkbox">
+							<input type="checkbox" id="freescroll" data-event="freescroll" name="checkbox" checked>
+							<label for="freescroll">freeScroll</label>
+						</div>
+					</div>
+
+					<div class="setting">
+						<div class="checkbox">
+							<input type="checkbox" id="infinite" data-event="infinite" name="checkbox">
+							<label for="infinite">infinite</label>
+						</div>
+					</div>
+
+					<h4>Controls</h4>
+					<div class="setting">
+						<div class="checkbox">
+							<input type="checkbox" id="wheel" data-event="wheel" name="checkbox" checked>
+							<label for="wheel">mousewheel</label>
+						</div>
+					</div>
+					<div class="setting">
+						<div class="checkbox">
+							<input type="checkbox" id="mouse" data-event="mouse" name="checkbox" checked>
+							<label for="mouse">drag</label>
+						</div>
+					</div>
+					<div class="setting">
+						<div class="checkbox">
+							<input type="checkbox" id="touch" data-event="touch" name="checkbox" checked>
+							<label for="touch">swipe</label>
+						</div>
+					</div>
+					<div class="setting">
+						<div class="checkbox">
+							<input type="checkbox" id="keydown" data-event="keydown" name="checkbox" checked>
+							<label for="keydown">keyboard</label>
+						</div>
+					</div>
+
+					<h4>Methods</h4>
+					<div class="setting">
+						<button type="button" data-method="prev">prev()</button>
+						<button type="button" data-method="next">next()</button>
+					</div>
+					<div class="setting">
+						<label for="scrollToPage">scrollToPage()</label>
+						<select id="scrollToPage"></select>
+					</div>
+					<div class="setting">
+						<label for="scrollToAnchor">scrollToAnchor()</label>
+						<select id="scrollToAnchor"></select>
+					</div>
+					<div class="setting">
+						<label for="orientate">orientate()</label>
+						<select id="orientate"></select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+		<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/easings.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/minibarjs@latest/dist/minibar.min.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

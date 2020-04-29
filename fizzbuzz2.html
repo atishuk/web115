@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasia's Cakes - Fizz Buzz</title>
+	<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+	<link rel = "stylesheet" type = "text/css" href = "styles/default_brand.css" />
+	<meta name="keywords" content="fizz, buzz" />
+	<link href="images/icon2.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<!-- include header-->
+	<div data-include="components/header_brand.html"></div>
+	<div data-include="components/navigation_brand.html"></div>
+	<main>
+		<h1>Nastassia Tsishuk</h1>
+		<h2>Fizz Buzz 2</h2>
+		<form class="fizzbuzz">
+			<label for="first_number">First number:</label><br>
+			<input type="text" id="first_number" name="first_number" value="9"><br>
+			<label for="second_number">Second number:</label><br>
+			<input type="text" id="second_number" name="second_number" value="3"><br>
+			<button type="button" id="check_fizzbuzz" onclick="check_nums()">Check</button>
+		</form>
+	</main>
+<!-- include footer-->
+<div data-include="components/footer_brand.html"></div>
+<script src="scripts/htmlinclude.js"></script>
+<script src="scripts/fizzbuzz2.js"></script>
+</body>
+</html>
