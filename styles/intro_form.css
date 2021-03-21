@@ -1,0 +1,84 @@
+﻿body {
+	min-width: 642px;
+}
+
+main {
+	min-width: 415px;
+	padding-right: 10px;
+}
+
+label {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.intro_name label {
+	display: inline-block;
+	width: 105px;
+}
+.questions label {
+	display: block;
+	width: auto;
+	max-width: 415px;
+}
+
+input, select {
+	width: 300px;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 0.9em;
+	color: #7F003B;
+	font-style: italic;
+}
+
+button {
+	display: inline-block;
+	width: 100px;
+	padding: 5px 5px;
+	margin: 10px 0 0 0;
+	border-radius: 5px;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1em;
+	color: #7F003B;
+}
+
+textarea {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 0.8em;
+	color: #7F003B;
+	font-style: italic;
+	width: 395px;
+	min-height: 145px;
+	resize: vertical;
+	padding: 5px;
+}
+select {
+	width: 410px;
+	margin-top: 5px;
+}
+
+#courses {
+	width: 100px;
+}
+
+.course {
+	display: block;
+	margin: 5px 0;
+	width: 405px;
+}
+
+.questions p {
+	margin-bottom: 5px;
+}
+
+#add_course_box {
+	width: auto;
+}
+
+ul {
+	margin: 5px 20px 0 10px;
+	list-style-type: none;
+}
+
+li {
+	margin: 5px 0;
+}

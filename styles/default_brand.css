@@ -1,0 +1,541 @@
+﻿* {
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1.1em;
+	color: #7F003B;
+	background-color: #FBCBDE;
+	height: auto;
+	min-width:460px;
+	width:100%;
+	display: block;
+}
+
+main {
+	display:inline-block;
+	margin: 20px 0 20px 200px;
+	min-height: 530px;
+	height: auto;
+	position: relative;
+	padding: 0 30px;
+}
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+	font-family: 'Mogra', cursive;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+a {
+	color: #ED178D;
+}
+
+ul {
+	margin-left: 20px;
+}
+
+/*image customization*/
+figcaption {
+	font-style: italic;
+}
+
+figure {
+	text-align: center;
+	width: auto;
+	margin-bottom: 10px;
+}
+
+.background_color {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background-color: #D5EEF3;
+	border-radius: 50%;
+}
+
+.logo_example {
+	width: 150px;
+}
+
+.palette {
+	display: inline-block;
+}
+
+.colors figure {
+	float: left;
+	width: 130px;
+}
+
+.color {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 5px solid white;
+	margin: 10px 0;
+}
+
+.pink {
+	background-color: #ED178D;
+}
+
+.white {
+	background-color: #D5EEF3;
+}
+
+.rose {
+	background-color: #FBCBDE;
+}
+
+.green {
+	background-color: #34C4AE;
+}
+
+.burgundy {
+	background-color: #7F003B;
+}
+
+.abc {
+	display: inline-block;
+	width: 160px;
+	height: 90px;
+	padding: 5px;
+	border: 5px solid white;
+	margin: 20px 0 10px 0;
+}
+
+.fonts {
+	margin-bottom: 10px;
+}
+
+.fonts figure {
+	float: left;
+	width: 200px;
+}
+
+.mogra {
+	font-family: 'Mogra', cursive;
+}
+
+.philosopher {
+	font-family: 'Philosopher', sans-serif;
+}
+
+#links {
+	line-height: 1.5;
+	/*display: block;*/
+	text-align: center;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
+.bigpic {
+	width: 100%;
+	min-width: 210px;
+	max-width: 950px;
+}
+
+.expampleimg {
+	width: 100%;
+	min-width: 50px;
+	max-width: 200px;
+	display: inline-block;
+	margin: 10px 0;
+	border-radius: 10%;
+}
+
+.menubtn {
+	font-size: 100%;
+	font-family: inherit;
+	border: 0;
+	padding: 0;
+	color: #7F003B;
+	cursor: pointer;
+}
+
+.headerswtl {
+	font-size: 1.2em;
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	text-decoration: underline;
+}
+
+.level0 {
+	list-style-type: decimal;
+	display: block;	
+}
+
+.level1 li, .level2 {
+	margin-left: 1.5em;
+}
+
+.level3 {
+	margin-left: 3em;
+}
+
+.level4 {
+	margin-left: 4.5em;
+}
+
+.level5 {
+	margin-left: 3em;
+}
+
+.level2, .level3, .level4, .level5, .levelText {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.9em;
+}
+
+.levelText {
+	font-size: 0.8em;
+}
+
+.level1 {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.examplesheader {
+	text-align: left;
+	margin-top: 20px;
+}
+ 
+.examplebutton {
+	padding: 5px 10px;
+	border-radius: 7px;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+label {
+	display: inline-block;
+	width: 65px;
+}
+
+/*header customization*/
+header{
+	border-bottom: 4px solid #ED178D;
+	box-shadow: 5px 5px 15px grey;
+	display: inline-block;
+	height: 170px;
+	width: 100%;
+	position: relative;
+	background: url(../images/cupcake1.png);
+	background-position: 0 5%;
+	background-size: 50%;
+	background-color: #D5EEF3;
+}
+
+.transbox {
+	background-color: #D5EEF3;
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.home {
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	border: none;
+	width: 100%;
+	z-index: 9;
+}
+
+.logo {
+	margin-left: -3px;
+	margin-top: -15px;
+	float: left;
+	position: absolute;
+	z-index: 11;
+}
+
+#title {
+	position: absolute;
+	left: calc(33% + 35px);
+	/*right: calc(63% - 330px);*/
+	top: 20%;
+	z-index: 12;
+	font-size: 2.7em;
+	line-height: 100%;
+	word-spacing: normal;
+	padding: 0;
+	width: auto;
+}
+
+.love {
+	position: absolute;
+	right: calc(63% - 230px);
+	bottom: 5px;
+	font-weight: bold;
+	color: #ED178D;
+	font-size: 2em;
+	/*font-family: 'Mogra', cursive;
+	text-shadow: 2px 2px #34C4AE;*/
+	width: auto;
+	background-color: #D5EEF3;
+	border-radius: 15px;
+	z-index: 15;
+}
+
+/*navigation panel customization*/
+nav {
+	display: inline-block;
+	margin-left: 20px;
+	width: 167px;
+	float: left;
+	height: auto;
+	font-family: 'Mogra', cursive;
+	letter-spacing: 3px;
+	position: absolute;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+div.sidebar a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #d5eef3;
+	text-shadow: 2px 2px #520000;
+	display: block;
+	border: none;
+	padding: 15px 20px;
+	position: relative;
+	background: #ED178D;
+	border-radius: 10px;
+	margin: 10px 0;
+	z-index: 5;
+}
+
+div.sidebar a:hover {
+  	background: #34C4AE;
+}
+
+.exampleArrows {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #ED178D;
+	margin-bottom: 30px;
+}
+.exampleArrows a {
+	text-decoration: none;
+}
+
+.domExample li {
+	margin-left: 2em;
+}
+
+/*footer customization*/
+footer {
+	margin-right: 0;
+	margin-top: 5px;
+	margin-bottom: 0;
+	text-align: center;
+	line-height: 15px;
+	display: block;
+	border-top: 4px solid #ED178D;
+	box-shadow: 5px -5px 15px grey;
+	padding: 0;
+	position: relative;
+	background: url(../images/cupcake1.png);
+	background-color: #D5EEF3;
+	background-size: 50%;
+	background-position: 0 5%;
+	height: 100px;
+}
+
+.notes {
+	display: inline-block;
+	padding: 0;
+	position: absolute;
+	bottom: -5px;
+	z-index: 20;
+	left: 50%;
+}
+
+.css {
+	left: calc(50% - 100px);
+}
+
+div.notes img {
+	height: 100px;
+}
+
+#copyrights {
+	position: absolute;
+	font-size: 0.8em;
+	font-style: italic;
+	width: calc(100% - 60px);
+	bottom: 5px;
+	left: 30px;
+	z-index: 10;
+}
+
+#copydiv {
+	float: left;
+}
+
+#webmaster {
+	float: right;
+}
+
+.base {
+	display: block;
+	padding: 2px 7px 5px 7px;
+	background-color: #D5EEF3;
+	border-radius: 15px;
+	/*border: 1px solid red;*/
+}
+
+/*Fizz Buzz */
+
+.fizzbuzz label {
+	display: inline-block;
+	width: 130px;
+	margin: 10px 0;
+}
+
+.fizzbuzz input {
+	width: 200px;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1em;
+	color: #7F003B;
+	font-style: italic;
+}
+
+#submit_fizzbuzz, #modify_fizzbuzz, #check_fizzbuzz {
+	width: 100px;
+	padding: 5px 5px;
+	margin: 10px 0;
+	border-radius: 5px;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1em;
+	color: #7F003B;
+}
+
+.tasty_cakes li {
+	margin-left: 3em;
+}
+
+.word_to_add {
+	display: inline-block;
+}
+
+.name, .for_list {
+	border: 2px solid maroon;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 15px 10px;
+	width: auto;
+}
+
+.name input {
+	max-width: 195px;
+}
+
+.name label {
+	max-width: 110px;
+} 
+
+.for_list input {
+	max-width: 150px;
+}
+
+.buttons_fizzbuzz4 {
+	margin: 0 10px;
+	text-align: center;
+}
+
+.buttons_fizzbuzz4 button, #dom_button {
+	display: inline-block;
+	width: 100px;
+	padding: 5px 5px;
+	margin: 0;
+	border-radius: 5px;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1em;
+	color: #7F003B;
+}
+
+form {
+	display: inline-block;
+	width: auto;
+}
+
+.words label {
+	margin: 5px 0;
+}
+
+#dom_button {
+	margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px 0 20px 0;
+}
+
+table, th, td {
+  border: 1px solid maroon;
+}
+
+th, td {
+  padding: 7px 10px;
+  text-align: left;
+}
+
+#dom_baked_goods {
+	border: 2px solid maroon;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 10px 0;
+	width: 60%;
+	text-align: center;
+}
+
+#domExample {
+	display: inline-block;
+	text-align: left;
+	margin: 10px;
+}
+
+#dom {
+	margin-bottom: 40px;
+}
+
+#user_choice {
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+
+.dom_level1, .dom_level2 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.9em;
+}
+
+.dom_level2 {
+	margin-left: 1.5em;
+}
