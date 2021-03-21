@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasia's Cakes - A Smarter Way to Learn JS. Examples</title>
+	<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+	<link rel = "stylesheet" type = "text/css" href = "styles/default_brand.css" />
+	<meta name="keywords" content="Nastassia Tsishuk, web115, swtl" />
+	<link href="images/icon2.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div data-include="components/header_brand.html"></div>
+<div data-include="components/navigation_brand.html"></div>
+	<main>
+		<h1>Nastassia Tsishuk</h1>
+		<div id="dom"><h2>A Smarter Way to Learn JavaScript. Examples
+		</h2><h3 class="examplesheader" id="settingStyles">The Document Object Model(DOM)
+		</h3><div id="dom_baked_goods"><h4>Our baked goods:
+			</h4><ol id="domExample"><li>Biscuits</li><li>Bagels</li><li>Bread rolls</li><li>Buns</li><li>Muffins</li><li>Brownies</li><li>Cakes</li><li>Cookies</li><li>Pastries</li></ol><h4>Choose your favorite!
+		</h4><button type="button" id="dom_button" onclick="choice()">Click
+		</button></div></div>
+		<p id="dom_chart">Part of the DOM chart of this page.</p>
+		<table>
+			<tr>
+				<th>Level</th>
+				<th>Tag</th>
+			</tr>
+			<tr>
+				<td>1st level</td>
+				<td>document</td>
+			</tr>
+			<tr>
+				<td>2nd level</td>
+				<td>&lt;html&gt;</td>
+			</tr><tr>
+				<td>3rd level</td>
+				<td>&lt;head&gt;</td> 
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;title&gt;</td>
+			</tr><tr>
+				<td>5th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;link&gt; to the google stylesheet</td>
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;meta&gt;</td>
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;link&gt; to the favicon</td>
+			</tr><tr>
+				<td>3rd level</td>
+				<td>&lt;body&gt;</td>
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;header&gt; as include</td>
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;nav&gt; as include</td>
+			</tr><tr>
+				<td>4th level</td>
+				<td>&lt;main&gt;</td>
+			</tr><tr>
+				<td>5th level</td>
+				<td>&lt;h1&gt;</td>
+			</tr><tr>
+				<td>6th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>5th level</td>
+				<td>&lt;div&gt;</td>
+			</tr><tr>
+				<td>6th level</td>
+				<td>&lt;h2&gt;</td>
+			</tr><tr>
+				<td>7th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>6th level</td>
+				<td>&lt;h3&gt;</td>
+			</tr><tr>
+				<td>7th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>6th level</td>
+				<td>&lt;h4&gt;</td>
+			</tr><tr>
+				<td>7th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>6th level</td>
+				<td>&lt;div&gt; id="dom_baked_goods"</td>
+			</tr><tr>			
+				<td>7th level</td>
+				<td>&lt;ol&gt; ordered list with baked goods</td>
+			</tr><tr>
+				<td>8th level</td>
+				<td>&lt;li&gt;</td>
+			</tr><tr>
+				<td>9th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>7th level</td>
+				<td>&lt;h4&gt;</td>
+			</tr><tr>
+				<td>8th level</td>
+				<td>Text content</td>
+			</tr><tr>
+				<td>7th level</td>
+				<td>&lt;button&gt;</td>
+			</tr><tr>
+				<td>8th level</td>
+				<td>Text content</td>
+			</tr>
+		</table> 
+		<p class="dom_level1">var num = parseInt(prompt("Number of your favorite baked good:"));</p>
+		<p class="dom_level1">while( num < 1 || num > 9) {</p>
+		<p class="dom_level2">num = prompt("Choose right number:");</p>
+		<p class="dom_level1">}</p>
+		<p class="dom_level1">var baked_goods = document.getElementsByTagName("li");</p>
+		<p class="dom_level1">var user_choice = ", great choice!";</p>
+		<p class="dom_level1">user_choice = baked_goods[num-1].textContent + user_choice;</p>
+		<p class="dom_level1">var add_text = document.createTextNode(user_choice);</p>
+		<p class="dom_level1">var choice_p = document.createElement("p");</p>
+		<p class="dom_level1">choice_p.setAttribute("id", "user_choice");</p>
+		<p class="dom_level1">choice_p.appendChild(add_text);</p>
+		<p class="dom_level1">var dom_div = document.getElementById("dom");</p>
+		<p class="dom_level1">dom_div.childNodes[2].appendChild(choice_p);</p>
+	</main>
+	<div class="exampleArrows"><a href="examples01.html">&#10094;&#10094; Previous</a>&emsp;<a href="examples02.html">Next &#10095;&#10095;</a></div>
+<!-- include footer-->
+<div data-include="components/footer_brand.html"></div>
+<script src="scripts/htmlinclude.js"></script>
+<script src="scripts/dom.js"></script>
+</body>
+
+</html>

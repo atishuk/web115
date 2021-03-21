@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tasia's Cakes - A Smarter Way to Learn JS</title>
+	<link href="https://fonts.googleapis.com/css?family=Mogra%7CPacifico%7CPhilosopher&display=swap" rel="stylesheet">
+	<!--font-family: 'Mogra', cursive;
+		font-family: 'Pacifico', cursive;
+		font-family: 'Philosopher', sans-serif;-->
+	<link rel = "stylesheet" type = "text/css" href = "styles/default_brand.css" />
+	<meta name="keywords" content="Nastassia Tsishuk, web115, swtl" />
+	<link href="images/icon2.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+	<!-- include header-->
+	<div data-include="components/header_brand.html"></div>
+	<div data-include="components/navigation_brand.html"></div>
+	<main>
+		<h1>Nastassia Tsishuk</h1>
+		<h2>A Smarter Way to Learn JavaScript. Examples</h2>
+		<h3 class="examplesheader" id="alert">Alerts</h3>
+		<p class="level2">alert("Thank you for visit my site!");</p>
+		<button class="examplebutton" onclick="showalert()">Click</button>
+		<h3 class="examplesheader" id="variables">Variables</h3>
+		<p class="level2">var name = "Tasia";</p>
+		<p class="level2">var product = "Cakes";</p>
+		<p class="level2">var price = 4.99;</p>
+		<h3 class="examplesheader" id="mExpressions">Math Expressions</h3>
+		<p class="level2">var num = prompt("One cake is $" + price + "\nHow many cakes do you want?");</p>
+		<p class="level2">var total = price * num;</p>
+		<p class="level2">alert("You will pay $" + total);</p>
+		<button class="examplebutton" onclick="estimate()">Estimate</button>		
+		<h3 class="examplesheader" id="concatenating">Concatenating text strings</h3>
+		<p class="level2">var userBrand = userName + "'s " + userProduct;</p>
+		<h3 class="examplesheader" id="prompts">Prompts</h3>
+		<p class="level2">var userName = prompt("Enter your name:", name);</p>
+		<p class="level2">var userProduct = prompt("Enter your product:", product);</p>
+		<button class="examplebutton" onclick="brandCreator()">Your brand</button>
+		<h3 class="examplesheader" id="ifStatements"><em>if</em>, <em>if...else</em> and <em>else if</em> statements</h3>
+		<p class="level2">var userAnswer = prompt("Do you like our cake(s)?", "Yes");</p>
+		<p class="level2">if (userAnswer.charAt(0).toLowerCase() === 'y') {</p>
+		<p class="level3">var tip = prompt("Tip: $", 3.00);</p>
+		<p class="level3">if (tip > 0) {</p>
+		<p class="level4">alert("Thank you!");</p>
+		<p class="level3">} else if (tip == 0) {</p>
+		<p class="level4">alert("Really? So sad :-(");</p>
+		<p class="level3">} else {</p>
+		<p class="level4">alert("Tips should be greater than 0.");</p>
+		<p class="level3">}</p>
+		<p class="level2">} else {</p>
+		<p class="level3">alert("Try another cake.");</p>
+		<p class="level2">}</p>
+		<button class="examplebutton" onclick="tips()">Tips</button>
+		<h3 class="examplesheader" id="converting">Converting strings and numbers</h3>
+		<p class="level2">var cakes = parseInt(document.getElementById("cakesGift").value);</p>
+		<p class="level2">var donuts = Number(document.getElementById("donutsGift").value);</p>	
+		<p class="level2">var message = "You bought " + (cakes + donuts).toString() + " baked goods. ";</p>
+		<h3 class="examplesheader" id="setsOfConditions">Sets of conditions</h3>
+		<p class="level2">if (cakes > 2 || donuts > 4 || (cakes + donuts) > 5) {</p>
+		<p class="level3">message = "You've got a free cake.";</p>
+		<p class="level2">} else {</p>
+		<p class="level3">message = "To receive a gift you need to buy more treats.";</p>
+		<p class="level2">}</p>
+		<p>How many baked goods do you want to buy?</p>
+		<label for="cakesGift">Cakes:</label>
+		<input type="text" id="cakesGift" name="cakesGift" value="0">
+		<label for="donutsGift">Donuts:</label>
+		<input type="text" id="donutsGift" name="donutsGift" value="0">
+		<br>
+		<button class="examplebutton" onClick="gift()">Ok</button>
+		<br>
+		<p id="gift"></p>
+		<h3 class="examplesheader" id="arrays">Arrays</h3>
+		<p class="level2">var products = ["Biscuit", "Bun", "Cake", "Cookie", "Pie", "Donut"];</p>
+		<p class="level2">var newProduct = "Muffin";</p>
+		<p class="level2">products.push(newProduct);</p>
+		<br>
+		<p>We have: Biscuit, Bun, Cake, Cookie, Pie, Donut, Muffin.</p>
+		<h3 class="examplesheader" id="forLoop"><em>for</em> loops</h3>
+		<p class="level2">for (var i = 0; i &lt; products.length; i++) {</p>
+		<p class="level3">newmsg = newmsg + products[i] + ", ";</p>
+		<p class="level2">}</p>
+		<h3 class="examplesheader" id="cases">Changing case</h3>
+		<p class="level2">if (userAnswer.charAt(0).toLowerCase() === 'y') {</p>
+		<h3 class="examplesheader" id="strings">Strings</h3>
+		<p class="level2">var newmsg = "Now we have: ";</p>
+		<p class="level2">for (var i = 0; i &lt; products.length; i++) {</p>
+		<p class="level3">newmsg = newmsg + products[i] + ", ";</p>
+		<p class="level2">}</p>
+		<p class="level2">newmsg = newmsg.slice(0,-2) + "."</p>
+		<br>
+		<p>We've got new product.</p>
+		<button class="examplebutton" onClick="addProduct()">Products</button>
+		<p id="products"></p>
+		<h3 class="examplesheader" id="randonNum">Random numbers</h3>
+		<p class="level2">var randomNum = (Math.random() * 10) + 1;</p>
+		<h3 class="examplesheader" id="roundNum">Rounding numbers</h3>
+		<p class="level2">var randomInt = Math.floor(randomNum);</p>
+		<br>
+		<p>Let's play a game.</p>
+		<button class="examplebutton" onClick="game()">Click!</button>
+		<h3 class="examplesheader" id="decimals">Length of decimals</h3>
+		<p class="level2">var numBuns = 3;</p>
+		<p class="level2">var priceBuns = 5;</p>	
+		<p class="level2">var priceOneBun = priceBuns / numBuns;</p>
+		<p class="level2">var str = priceOneBun.toString();</p>
+		<p class="level2">if (str.charAt(str.length - 1) === "5") {</p>	
+		<p class="level3">str = str.slice(0, str.length - 1) + "6";</p>
+		<p class="level2">}</p>
+		<p class="level2">bun = Number(str);</p>	
+		<p class="level2">bunPrice = bun.toFixed(2);</p>
+		<br>
+		<button class="examplebutton" onclick="sale()">Sale!</button>
+		<p id="sale"></p>
+		<h3 class="examplesheader" id="todayDate">Date and time</h3>
+		<p class="level2">var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];</p>
+		<p class="level2">var dateIs = document.getElementById("forDate");</p>
+		<p class="level2">var today = new Date();</p>
+		<p class="level2">var month = today.getMonth() + 1;</p>
+		<p class="level2">var day = today.getDate();</p>
+		<p class="level2">var year = today.getFullYear();</p>
+		<p class="level2">var weekDayName = dayNames[today.getDay()];</p>
+		<p class="level2">var todayMDY = month + '/' + day + '/' + year;</p>
+		<br>
+		<button class="examplebutton" id="dateBtn">Today's date</button>
+		<p id="forDate"></p>
+		<h3 class="examplesheader" id="functions">Functions</h3>
+		<p class="level2">document.getElementById("dateBtn").onclick = function() {</p>
+		<p class="level2">function sale() {</p>
+		<p class="level2">function numOfGoods() {</p>
+		<p class="level3">return [cake, donut, cookie, biscuit];</p>
+		<p class="level2">}</p>
+		<p class="level2">function userOrder(goods) {</p>
+		<p class="level2">document.getElementById("order").onclick = function() {</p>
+		<p class="level2">userOrder(numOfGoods());</p>
+		<p class="level2">}</p>
+		<h3 class="examplesheader" id="fieldValues">Field values</h3>
+		<p class="level3">var cake = Number(document.getElementById("cakes").value);</p>
+		<p class="level3">var donut = Number(document.getElementById("donuts").value);</p>
+		<p class="level3">var cookie = Number(document.getElementById("cookies").value);</p>
+		<p class="level3">var biscuit = Number(document.getElementById("biscuits").value);</p>
+		<br>
+		<p>Choose how many baked goods you want to order and press the button.</p>
+		<label for="cakes">Cakes:</label>
+		<input type="text" id="cakes" name="cakes" value="0">
+		<br>
+		<label for="donuts">Donuts:</label>
+		<input type="text" id="donuts" name="donuts" value="0">
+		<br>
+		<label for="cookies">Cookies:</label>
+		<input type="text" id="cookies" name="cookies" value="0">
+		<br>
+		<label for="biscuits">Biscuits:</label>
+		<input type="text" id="biscuits" name=
+		"biscuits" value="0">
+		<br>
+		<button class="examplebutton" id="order">Order</button>
+		<p id="forFunctions"></p>
+		<h3 class="examplesheader" id="switchStatement"><em>switch</em> statements</h3>
+		<p class="level2">var today = new Date();</p>
+		<p class="level2">var weekDay = today.getDay();</p>
+		<p class="level2">switch(weekDay) {</p>
+		<p class="level3">case 0:</p>
+		<p class="level4">discountmsg = "You've got a discount of 20%.";</p>
+		<p class="level4">break;</p>
+		<p class="level3">case 5:</p>
+		<p class="level4">discountmsg = "You've got a discount of 10%.";</p>
+		<p class="level4">break;</p>
+		<p class="level3">case 6:</p>
+		<p class="level4">discountmsg = "You've got a discount of 15%.";</p>
+		<p class="level4">break;</p>
+		<p class="level3">default:</p>
+		<p class="level4">discountmsg = "You don't have a discount."</p>
+		<p class="level2">}</p>
+		<br>
+		<p>Check your today's discount.</p>
+		<button class="examplebutton" onclick="discount()">Discount</button>
+		<p id="forSwitch"></p>
+		<h3 class="examplesheader" id="whileLoop"><em>while</em> loops</h3>
+		<p class="level2">var userNum = Number(prompt("How many pieces do you want to try?", "1"));</p>
+		<p class="level2">while (i &lt; userNum) {</p>
+		<p class="level3">var imgCake = document.createElement("img");</p>
+		<p class="level3">imgCake.setAttribute("src", "images/cake-piece.png");</p>
+		<p class="level3">imgCake.setAttribute("class", "expampleimg");</p>
+		<p class="level3">forWhile.appendChild(imgCake);</p>
+		<p class="level3">i++;</p>
+		<p class="level2">}</p>
+		<h3 class="examplesheader" id="doWhileLoop"><em>do...while</em> loops</h3>
+		<p class="level2">do {</p>
+		<p class="level3">var imgMuffin = document.createElement("img");</p>
+		<p class="level3">imgMuffin.setAttribute("src", "images/muffin.png");</p>
+		<p class="level3">imgMuffin.setAttribute("class", "expampleimg");</p>
+		<p class="level3">forWhile.appendChild(imgMuffin);</p>
+		<p class="level3">j++;</p>
+		<p class="level2">} while (j &lt; userNum);</p>
+		<br>
+		<p>Do you want to try a cake?</p>
+		<button class="examplebutton" onclick="tryCake()">Try</button>
+		<p id="forWhile"></p>
+		<h3 class="examplesheader" id="placeScript">Placing scripts</h3>
+		<p class="level2">&lt;script&gt; <i>code</i> &lt;/script&gt;</p>
+		<p class="levelText">or</p>
+		<p class="level2">&lt;script src="scriptFile.js"&gt;&lt;/script&gt;</p>
+		<p class="levelText"><cite>Generally, the best place for scripts, though, is at the end of the body section. This guarantees that CSS styling and image display won't get held up while scripts are loading</cite> by Mark Myers.</p>
+		<h3 class="examplesheader" id="comments">Commenting</h3>
+		<p>Two ways mark text as a comment of Javascript:</p>
+			<p class="level2">// One line comment</p>
+			<p class="level2">/* Multiline comment */</p>
+		<h3 class="examplesheader" id="events">Events</h3>
+		<p class="level2">&lt;a href="JavaScript:void(0)" onClick="alert('Thank you for visiting our website!');"&gt;Click&lt;/a&gt;</p>
+		<p class="level2">&lt;button class="examplebutton" onClick="alert('Thank you for visiting our website!');"&gt;Click&lt;/button&gt;</p>
+		<p class="level2">&lt;img class="expampleimg" src="images/yummy-cake.jpg" onMouseover="src='images/yummy-cake-piece.jpg'" onMouseout="src='images/yummy-cake.jpg'"&gt;</p>
+		<p class="level2">&lt;textarea rows="4" cols="30" onFocus="this.style.backgroundColor = '#D5EEF3';" onBlur="this.style.backgroundColor = '#FBCBDE';"&gt;&lt;/textarea&gt;</p>
+		<br>
+		<button class="examplebutton" onClick="alert('Thank you for visiting our website!');">Click</button>
+		<a href="JavaScript:void(0)" onClick="alert('Thank you for visiting our website!');">Click</a>
+		<br>
+		<img class="expampleimg" src="images/yummy-cake.jpg" onMouseover="src='images/yummy-cake-piece.jpg'" onMouseout="src='images/yummy-cake.jpg'" alt="Yummy Cake">
+		<p>Hover the image.</p>
+		<br>		
+		<p>Your feedback about our cakes:</p>
+		<textarea rows="4" cols="30" onFocus="this.style.backgroundColor = '#D5EEF3';" onBlur="this.style.backgroundColor = '#FBCBDE';"></textarea>
+		<h3 class="examplesheader" id="settingStyles">Setting styles</h3>
+		<p class="level2">var slogon = document.getElementById("forStyles");</p>
+		<p class="level2">slogon.style.fontSize = "2em";</p>
+		<br>
+		<p id="forStyles">Tasia's cakes - Tasty cakes</p>
+		<button class="examplebutton" onClick="newStyle()">Make Bigger</button>
+		<h3 class="examplesheader" id="targetByTag">Target elements by tag name</h3>
+		<p class="level2">var bakedGoods = document.getElementsByTagName("li");</p>
+		<p class="level2">var userNum = prompt("Choose number from 1 to 9.");</p>
+		<p class="level2">var userBG = bakedGoods[userNum - 1].textContent.toLowerCase();</p>
+		<br>
+		<h4>Our baked goods:</h4>
+		<ol>
+			<li>Biscuit</li> 
+			<li>Bagel</li>
+			<li>Bread roll</li> 
+			<li>Bun</li>  
+			<li>Muffin</li> 
+			<li>Brownie</li> 
+			<li>Cake</li>
+			<li>Cookie</li> 	
+			<li>Pastry</li>
+		</ol>
+		<p>Make a beautiful list: <button class="examplebutton" onClick="listStyle()">Click</button></p>
+		<button class="examplebutton" onClick="favouriteBG()">Game</button>
+		<p id="favourite"></p>	
+	</main>
+	<div class="exampleArrows"><!--<a href="examples01.html">&#10094;&#10094;Previous</a>--><a href="dom.html">Next&#10095;&#10095;</a></div>
+<!-- include footer-->
+<div data-include="components/footer_brand.html"></div>
+<script src="scripts/htmlinclude.js"></script>
+<script src="scripts/examples01.js"></script>
+</body>
+
+</html>
